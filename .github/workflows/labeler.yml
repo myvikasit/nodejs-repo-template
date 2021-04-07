@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Label all PRs
-        uses: actions/labeler@master
+        uses: actions/labeler@main
         with:
           repo-token: "${{ secrets.GH_PAT }}"
       - name: Label approved PRs
-        uses: myvikasit/label-approved-action@master
+        uses: myvikasit/label-approved-action@main
         with:
           labels: "merge"
         env:

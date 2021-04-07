@@ -2,7 +2,7 @@ name: PR Generator CI
 on:
   push:
     branches-ignore:
-      - master
+      - main
       - production
 jobs:
   auto-pull-request:
@@ -69,5 +69,5 @@ jobs:
         if: always() && steps.should-pr.outputs.result
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          PULL_REQUEST_BRANCH: "master"
+          PULL_REQUEST_BRANCH: "main"
           PULL_REQUEST_REVIEWERS: "AmreeshTyagi"

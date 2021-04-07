@@ -1,1 +1,1 @@
-module.exports = require("@vikasit/config").releaseMaster;
+module.exports = require("@vikasit/config").releaseMain;

@@ -28,8 +28,8 @@ jobs:
           UPDATE_LABELS: "merge"
           UPDATE_METHOD: "merge"
       - name: Delete merged branch
-        uses: myvikasit/delete-merged-action@master
+        uses: myvikasit/delete-merged-action@main
         with:
-          branches: "!master, !production, *"
+          branches: "!main, !production, *"
         env:
           GITHUB_TOKEN: "${{ secrets.GH_PAT }}"

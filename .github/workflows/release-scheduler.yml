@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run release-scheduler
-        uses: myvikasit/release-scheduler@master
+        uses: myvikasit/release-scheduler@main
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
